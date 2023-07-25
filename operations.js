@@ -25,5 +25,19 @@ export class BasicOperations {
         }
         return minuend - subtrahend;
     }
+
+    /**
+     * Performs the multiplication operation
+     *
+     * @param multiplier
+     * @param multiplicand
+     * @returns {number} product
+     */
+    multiplication(multiplier, multiplicand){
+        if (isNaN(multiplier) || isNaN(multiplicand)) {
+            throw "No numbers";
+        }
+        return multiplier * multiplicand;
+    }
 }
 
