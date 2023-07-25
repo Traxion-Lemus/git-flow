@@ -39,5 +39,20 @@ export class BasicOperations {
         }
         return multiplier * multiplicand;
     }
+
+    /**
+     *
+     * @param dividend
+     * @param divisor
+     * @returns {{quotient: number, remainder: number}}
+     */
+    division(dividend, divisor) {
+        if (isNaN(dividend) || isNaN(divisor)) {
+            throw "No Numbers"
+        }
+        const quotient = Math.floor(dividend / divisor);
+        const remainder = dividend % divisor;
+        return {quotient, remainder};
+    }
 }
 
