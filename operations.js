@@ -1,6 +1,15 @@
 export class BasicOperations {
-    sum(...x) {
-        return x.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+
+    /**
+     * Performs the addition between n numbers
+     *
+     * @param addends
+     * @returns {*} sum
+     */
+    addition(...addends) {
+        return addends
+            .filter(value => !isNaN(value))
+            .reduce((previousValue, currentValue) => previousValue + currentValue, 0);
     }
 }
 
