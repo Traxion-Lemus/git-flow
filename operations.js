@@ -1,7 +1,7 @@
 export class BasicOperations {
 
     /**
-     * Takes n numbers and returns the sum, also filters the input in order to avoid an error
+     * Performs the addition between n numbers
      *
      * @param addends
      * @returns {*} sum
