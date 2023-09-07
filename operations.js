@@ -54,5 +54,20 @@ export class BasicOperations {
         const remainder = dividend % divisor;
         return {quotient, remainder};
     }
+
+    /**
+     *
+     * Power operation
+     *
+     * @param base
+     * @param exponent
+     * @returns {number}
+     */
+    power(base, exponent) {
+        if ( isNaN(base) || isNaN(exponent)) {
+            throw "No Numbers"
+        }
+        return Math.pow(base, exponent);
+    }
 }
 
