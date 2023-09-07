@@ -33,7 +33,7 @@ export class BasicOperations {
      * @param multiplicand
      * @returns {number} product
      */
-    multiplication(multiplier, multiplicand){
+    multiplication(multiplier, multiplicand) {
         if (isNaN(multiplier) || isNaN(multiplicand)) {
             throw "No numbers";
         }
@@ -52,7 +52,21 @@ export class BasicOperations {
         }
         const quotient = Math.floor(dividend / divisor);
         const remainder = dividend % divisor;
-        return {quotient, remainder};
+        return { quotient, remainder };
+    }
+
+    /**
+    *
+    * @param dividend
+    * @param divisor
+    * @returns {{quotient: number, remainder: number}}
+    */
+    squareRoot(radicand) {
+        if (isNaN(radicand)) {
+            throw "No Numbers"
+        }
+        const root = Math.sqrt(radicand);
+        return { root };
     }
 
     /**
