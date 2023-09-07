@@ -78,7 +78,7 @@ export class BasicOperations {
      * @returns {number}
      */
     power(base, exponent) {
-        if ( isNaN(base) || isNaN(exponent)) {
+        if (isNaN(base) || isNaN(exponent)) {
             throw "No Numbers"
         }
         return Math.pow(base, exponent);
